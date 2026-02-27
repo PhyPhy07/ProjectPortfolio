@@ -54,14 +54,14 @@ const WorkExperience = () => {
           {experienceItems.map((item, index) => (
             <article
               key={index}
-              className="group relative overflow-hidden rounded-2xl p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#2f1c55] shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] transition-all duration-300 hover:-translate-y-1 md:-translate-y-2 hover:border-[#7c3aed]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)]"
+              className="group relative overflow-hidden rounded-2xl p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#ffecd1] shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] transition-all duration-300 hover:-translate-y-1 md:-translate-y-2 hover:border-[#D3453E]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)]"
             >
               {/* card gradient */}
               <div
                 className="pointer-events-none absolute inset-0 rounded-2xl  opacity-70 transition-opacity duration-300 group-hover:opacity-90"
                 style={{
                   background:
-                    "radial-gradient(120% 80% at 80% 10%, rgba(125,58, 242, 0.35) 0%, rgba(126,58, 242, 0.15) 25%), rgba(18, 8, 36, 0) 60%",
+                    "radial-gradient(120% 80% at 80% 10%,#36A07F 0%,#082B27 25%), rgba(18, 8, 36, 0) 60%",
                 }}
               ></div>
 
@@ -99,7 +99,7 @@ const WorkExperience = () => {
                         onClick={() =>
                           setExpandedIndex(expandedIndex === index ? null : index)
                         }
-                        className="inline-flex items-center text-[11px] md:text-xs px-4 py-1.5 rounded-full bg-[#1a0c2e] border border-[#3e1d6d] text-white/80 hover:text-white hover:border-[#a855f7] hover:bg-[#220e3d] transition-colors"
+                        className="inline-flex items-center text-[11px] md:text-xs px-4 py-1.5 rounded-full bg-[#134237] border border-[#ffecd1] text-white/80 hover:text-white hover:border-[#D3453E] hover:bg-[#134237] transition-colors"
                       >
                         {expandedIndex === index ? "Show less" : "Learn more"}
                       </button>

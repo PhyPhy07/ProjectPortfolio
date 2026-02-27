@@ -10,14 +10,14 @@ const TechStack = () => {
             <p className='text-white/50 text-sm mb-16'>that values improving people’s lives through accessible design</p>
 
             <div className='relative max-w-4xl mx-auto w-full'>
-                <Image
+                {/* <Image
                 src='/images/skills-section.png'
                 alt='tech stack'
                 width={1280}
                 height={920}
                 className='w-full h-auto'
                 priority
-                />
+                /> */}
             </div>
         </ScrollReveal>
     </section>

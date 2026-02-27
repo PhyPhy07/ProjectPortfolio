@@ -38,7 +38,7 @@ const ProjectsSection = () => {
                 <div>
                     <div tabIndex={0} className='group cursor-pointer rounded-2xl overflow-hidden bg-[#0f061c] border border-[#2f1c55] shadow-[0_0_90px_rgba(168, 85, 247, 0.28)] transition-transform duration-300 hover:-translate-y-1 focus:-translate-y-1'>
                         <div className='overflow-hidden h-[360px]'>
-                            <Image src="/images/Portfolio.png" alt='portflio-1' width={582} height={640} className='w-full h-auto transition-transform duration-3500 ease-linear group-hover:-translate-y-[55%] group-active:-translate-y-[55%] group-focus:-translate-y-[55%]'/>
+                            {/* <Image src="/images/.png" alt='portflio-1' width={582} height={640} className='w-full h-auto transition-transform duration-3500 ease-linear group-hover:-translate-y-[55%] group-active:-translate-y-[55%] group-focus:-translate-y-[55%]'/> */}
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
                 <div className='relative md:order-1'>
                     <div tabIndex={0} className='group cursor-pointer rounded-2xl overflow-hidden bg-[#0f061c] border border-[#2f1c55] shadow-[0_0_90px_rgba(168, 85, 247, 0.28)] transition-transform duration-300 hover:-translate-y-1 focus:-translate-y-1'>
                         <div className='overflow-hidden md:h-[360px] h-[250px]'>
-                            <Image src="/images/Portfolio.png" alt='portflio-1' width={582} height={640} className='w-full h-auto transition-transform duration-3500 ease-linear group-hover:-translate-y-[55%] group-active:-translate-y-[55%] group-focus:-translate-y-[55%]'/>
+                           
                         </div>
                     </div>
                 </div>
