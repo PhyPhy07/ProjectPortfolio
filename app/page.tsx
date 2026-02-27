@@ -1,12 +1,21 @@
-import React from 'react'
+import ContactSection from "@/src/component/ContactSection";
+import HeroSection from "@/src/component/HeroSection";
+import ProjectsSection from "@/src/component/ProjectsSection";
+import TechStack from "@/src/component/TechStack";
+import WorkExperience from "@/src/component/WorkExperience";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div>
-    <div className="min-h-screen">Div 1</div>
-    <div className="min-h-screen">Div 2</div>
-    </div>
-  )
-}
+    <>
+     <main className="max-w-7xl mx-auto px-6 lg:px-8">
+     <HeroSection/>
+    <WorkExperience/>
+     <TechStack/>
+     <ProjectsSection/>
+     <ContactSection/>
+     </main>
+    </> 
+  );
+};
 
-export default HomePage
+export default Home;
