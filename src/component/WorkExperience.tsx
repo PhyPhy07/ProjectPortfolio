@@ -1,42 +1,40 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
+
+const TRUNCATE_LENGTH = 120;
 
 type ExperienceItem = {
   title: string;
   description: string;
+  bullets?: string[];
   image: string;
 };
 
 const experienceItems: ExperienceItem[] = [
   {
-    title: "CIB on the Mobile",
+    title: "Home Depot ProAssist Order Management System",
     description:
-      "Your end‑to‑end product experience journey for an amazing digital experience.",
-    image: "/images/work-expriences-1.png",
-  },
-  {
-    title: "CIB on the Mobile",
-    description:
-      "Your end‑to‑end product experience journey for an amazing digital experience.",
-    image: "/images/work-expriences-2.png",
-  },
-  {
-    title: "CIB on the Mobile",
-    description:
-      "Your end‑to‑end product experience journey for an amazing digital experience.",
-    image: "/images/work-expriences-3.png",
-  },
-  {
-    title: "CIB on the Mobile",
-    description:
-      "Your end‑to‑end product experience journey for an amazing digital experience.",
-    image: "/images/work-expriences-4.png",
-  },
+      "Large-scale web application built to centralize and streamline the management of high-volume customer orders and inventory for Home Depot Pro customers.",
+    bullets: [
+      "Designed and delivered React + TypeScript features that improved usability and operational workflows",
+      "Led backend observability modernization through OpenTelemetry tracing, Prometheus metrics, and Grafana dashboards — reducing investigation time and improving system reliability",
+      "Migrated legacy logging to structured TypeScript-based logging",
+      "Improved CI/CD pipelines and executed API and service migrations with minimal production risk",
+      "Supported platform capabilities: quote management, build project coordination, order expediting, and on-time delivery tracking at scale",
+    ],
+    image: "/images/pro.jpg",
+  }
 ];
 
 const WorkExperience = () => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  const truncate = (text: string, maxLength: number) =>
+    text.length <= maxLength ? text : text.slice(0, maxLength).trim() + "...";
+
   return (
     <section id="about" className="relative py-24">
       {/* glow effect */}
@@ -85,17 +83,28 @@ const WorkExperience = () => {
                     {" "}
                     {item.title}
                   </h4>
-                  <p className="mt-2 text-xs md:text-sm text-white/60 max-w-sm mx-auto sm:mx-0">
-                    {item.description}
-                  </p>
-                  <div className="mt-4 flex justify-center sm:justify-start">
-                    <Link
-                      href="#"
-                      className="inline-flex items-center text-[11px] md:text-xs px-4 py-1.5 rounded-full bg-[#1a0c2e] border border-[#3e1d6d] text-white/80 hover:text-white hover:border-[#a855f7] hover:bg-[#220e3d] transition-colors"
-                    >
-                      Learn More
-                    </Link>
+                  <div className="mt-2 text-xs md:text-sm text-white/60 max-w-sm mx-auto sm:mx-0">
+                    <p>{expandedIndex === index ? item.description : truncate(item.description, TRUNCATE_LENGTH)}</p>
+                    {expandedIndex === index && item.bullets && (
+                      <ul className="mt-3 space-y-2 list-disc list-inside pl-1">
+                        {item.bullets.map((bullet, i) => (
+                          <li key={i}>{bullet}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
+                  {(item.description.length > TRUNCATE_LENGTH || item.bullets?.length) && (
+                    <div className="mt-4 flex justify-center sm:justify-start">
+                      <button
+                        onClick={() =>
+                          setExpandedIndex(expandedIndex === index ? null : index)
+                        }
+                        className="inline-flex items-center text-[11px] md:text-xs px-4 py-1.5 rounded-full bg-[#1a0c2e] border border-[#3e1d6d] text-white/80 hover:text-white hover:border-[#a855f7] hover:bg-[#220e3d] transition-colors"
+                      >
+                        {expandedIndex === index ? "Show less" : "Learn more"}
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             </article>
