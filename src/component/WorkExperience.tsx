@@ -46,7 +46,7 @@ const WorkExperience = () => {
         }}
       />
       <div>
-        <h3 className="text-2xl md:text-3xl font-semibold text-white/90 mb-8">
+        <h3 className="text-2xl md:text-3xl font-semibold text-[#FFB31F] mb-8">
           Work Exprience
         </h3>
 
