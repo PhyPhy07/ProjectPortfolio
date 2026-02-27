@@ -54,17 +54,11 @@ const WorkExperience = () => {
           {experienceItems.map((item, index) => (
             <article
               key={index}
-              className="group relative overflow-hidden rounded-2xl p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#ffecd1] shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] transition-all duration-300 hover:-translate-y-1 md:-translate-y-2 hover:border-[#D3453E]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)]"
+              className="group relative overflow-hidden rounded-2xl p-5 sm:p-6 md:p-7 border border-[#ffecd1] shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] transition-all duration-300 hover:-translate-y-1 md:-translate-y-2 hover:border-[#D3453E]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)]"
+              style={{
+                background: "linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)",
+              }}
             >
-              {/* card gradient */}
-              <div
-                className="pointer-events-none absolute inset-0 rounded-2xl  opacity-70 transition-opacity duration-300 group-hover:opacity-90"
-                style={{
-                  background:
-                    "radial-gradient(120% 80% at 80% 10%,#36A07F 0%,#082B27 25%), rgba(18, 8, 36, 0) 60%",
-                }}
-              ></div>
-
               <div className="relative  flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 md:gap-8">
                 {/* icon */}
                 <div className="relative shrink-0 w-16 h-16 sm:size-20 md:size-24 transition-transform duration-300 group-hover:-translate-y-1">
