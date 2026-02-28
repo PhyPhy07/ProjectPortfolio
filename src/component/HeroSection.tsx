@@ -7,21 +7,21 @@ import ScrollReveal from "./ScrollReveal";
 
 const HereSection = () => {
   return (
-    <section id="home" className="relative pt-36 pb-24">
-      <div className="mt-12 md:mt-24">
+    <section id="home" className="relative pt-24 sm:pt-32 md:pt-36 pb-16 sm:pb-24">
+      <div className="mt-8 sm:mt-12 md:mt-24 px-4 sm:px-6">
         {/* avatar and headline */}
         <ScrollReveal stagger={0.12} className="flex flex-col md:flex-row gap-8 items-start md:items-center">
           {/* avatar and greetings */}
           <div className="relative flex justify-center md:justify-end">
             <div className="pointer-events-none absolute -inset-12 md:-inset-24 rounded-full bg-linear-to-b from-[#36A07F] via-[#C0350F]/60 to-transparent blur-3xl opacity-90"></div>
             <div className="relative">
-                <Image src="/images/avatar.png" alt="avatar image" width={300} height={300} className="relative object-cover rounded-full" priority unoptimized/>
+                <Image src="/images/avatar.png" alt="avatar image" width={300} height={300} className="relative object-cover rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-[300px] md:h-[300px]" priority unoptimized/>
 
                 <div  className="select-none pointer-events-none absolute -top-8 -right-6 md:-top-16 md:-right-40 text-md text-white/70">
                     <div className="items-right justify-right">
                     
                         <div className="-mt-24 md:-mt-1">
-                            <span className="whitespace-nowrap">Hello World! I'm {" "}<span className="text-[#FFB31F]">Phy Sneed ("Phylicia" if we want to get fancy)</span></span>
+                            <span className="sm:whitespace-nowrap">Hello World! I'm {" "}<span className="text-[#FFB31F]">Phy Sneed ("Phylicia" if we want to get fancy)</span></span>
                             <div className="relative w-12 h-6 md:w-36 md:h-20 ml-8 md:ml-58 mt-1">
                             <Image src="/images/heroarrow.gif" alt="arrow image" fill  className="object-contain scale-x-100 -rotate-6" priority/>
                         </div>
@@ -37,7 +37,7 @@ const HereSection = () => {
               I'm a Software Engineer who is ...
             </p>
 
-            <h1 className="text-4xl sm:text-5xl font-normal tracking-tight leading-[1.15]">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-normal tracking-tight leading-[1.2]">
               <span className="block">curious by nature,</span>
               <span className="block">
              
@@ -53,15 +53,15 @@ const HereSection = () => {
         </ScrollReveal>
 
         {/* role and description */}
-        <ScrollReveal delay={0.15} className="mt-16 max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight">
+        <ScrollReveal delay={0.15} className="mt-10 sm:mt-16 max-w-3xl px-4 sm:px-6">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-normal tracking-tight">
                 Where Precision Meets{" "}
                 <span className="text-[#D3453E]">
                   <Typewriter 
                     words={["Prose."]}
-                    typeSpeed={40}
+                    typeSpeed={120}
                     deleteSpeed={0}
-                    delaySpeed={600}
+                    delaySpeed={5000}
                     cursor
                     cursorStyle="|"
                     loop={1}

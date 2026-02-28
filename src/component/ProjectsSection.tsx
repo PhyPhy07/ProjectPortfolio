@@ -15,12 +15,12 @@ const ProjectsSection = () => {
                     {/* heading */}
                     <div className='mb-12'>
                         <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
-                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Example Project</h3>
+                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Coming Soon</h3>
                     </div>
 
                     {/* description */}
                     <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-white/6 backdrop-blur-sm border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(30,107,90,0.25)]'>
-                        <p className='text-sm p-4 text-white/75'>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
+                        <p className='text-sm p-4 text-white/75'>Coming Soon</p>
                         <div className="pointer-events-none absolute -inset-px rounded-[14px] opacity-60"
                         style={{
                             background: 'linear-gradient(135deg, rgba(30, 107, 90, 0.35), rgba(8, 43, 39, 0.05))',
@@ -59,12 +59,12 @@ const ProjectsSection = () => {
                     {/* heading */}
                     <div className='mb-12 text-right'>
                         <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
-                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Example Project</h3>
+                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Coming Soon</h3>
                     </div>
 
                     {/* description */}
                     <div className='relative md:-ml-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-white/6 backdrop-blur-sm border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(30,107,90,0.25)]'>
-                        <p className='text-sm p-4 text-white/75'>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
+                        <p className='text-sm p-4 text-white/75'>Coming Soon</p>
                         <div className="pointer-events-none absolute -inset-px rounded-[14px] opacity-60"
                         style={{
                             background: 'linear-gradient(135deg, rgba(30, 107, 90, 0.35), rgba(8, 43, 39, 0.05))',
@@ -72,8 +72,7 @@ const ProjectsSection = () => {
                         />
                     </div>
                     <div className='mt-6 ml-2 flex justify-end space-x-3 text-white/60'>
-                        <span>*</span>
-                        <span>*</span>
+                        
                     </div>
                 </div>
 
