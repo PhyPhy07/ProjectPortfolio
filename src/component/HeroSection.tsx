@@ -15,7 +15,7 @@ const HereSection = () => {
           <div className="relative flex justify-center md:justify-end">
             <div className="pointer-events-none absolute -inset-12 md:-inset-24 rounded-full bg-linear-to-b from-[#36A07F] via-[#C0350F]/60 to-transparent blur-3xl opacity-90"></div>
             <div className="relative">
-                <Image src="/images/avatar.png" alt="avatar image" width={240} height={240} className="relative object-cover rounded-full" priority unoptimized/>
+                <Image src="/images/avatar.png" alt="avatar image" width={300} height={300} className="relative object-cover rounded-full" priority unoptimized/>
 
                 <div  className="select-none pointer-events-none absolute -top-8 -right-6 md:-top-16 md:-right-40 text-md text-white/70">
                     <div className="items-right justify-right">

@@ -21,11 +21,11 @@ const Header = () => {
           <Link href="/" className="text-3xl font-extrabold text-[#7e2238]">Σ</Link>
 {/*desktop navigation*/}
 <nav className="hidden lg:flex items-center space-x-10 font-medium text-lg text-white/80">
-    <Link href="#Home" className="hover:text-[#ffecd1] transition duration-200">Home</Link>
-    <Link href="#About" className="hover:text-[#ffecd1] transition duration-200">About</Link>
-    <Link href="#Stacked Skills" className="hover:text-[#ffecd1] transition duration-200">Stacked Skills</Link>
-    <Link href="#Projects" className="hover:text-[#ffecd1] transition duration-200">Projects</Link>
-    <Link href="#Contact" className="hover:text-[#ffecd1] transition duration-200">Contact</Link>
+    <Link href="#home" className="hover:text-[#ffecd1] transition duration-200">Home</Link>
+    <Link href="#about" className="hover:text-[#ffecd1] transition duration-200">About</Link>
+    <Link href="#lab" className="hover:text-[#ffecd1] transition duration-200">Stacked Skills</Link>
+    <Link href="#projects" className="hover:text-[#ffecd1] transition duration-200">Projects</Link>
+    <Link href="#contact" className="hover:text-[#ffecd1] transition duration-200">Contact</Link>
 </nav>
 <button>
     <HiBars3 className="size-6 text-white" />
