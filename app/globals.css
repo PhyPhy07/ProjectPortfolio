@@ -29,3 +29,20 @@ body {
   color: var(--foreground);
    font-family: "Preahvihear", sans-serif;
 }
+
+@keyframes scroll-horizontal {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-25%, 0, 0);
+  }
+}
+
+.animate-scroll-horizontal {
+  animation-name: scroll-horizontal;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
