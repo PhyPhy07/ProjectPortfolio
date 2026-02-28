@@ -55,17 +55,19 @@ const HereSection = () => {
         {/* role and description */}
         <ScrollReveal delay={0.15} className="mt-10 sm:mt-16 max-w-3xl px-4 sm:px-6">
             <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-normal tracking-tight">
-                Where Precision Meets{" "}
-                <span className="text-[#D3453E]">
-                  <Typewriter 
-                    words={["Prose."]}
-                    typeSpeed={120}
-                    deleteSpeed={0}
-                    delaySpeed={5000}
-                    cursor
-                    cursorStyle="|"
-                    loop={1}
-                  />
+                Where Precision{" "}
+                <span className="whitespace-nowrap">
+                  Meets{" "}
+                  <span className="text-[#D3453E]">
+                    <Typewriter 
+                      words={["Prose."]}
+                      typeSpeed={120}
+                      deleteSpeed={0}
+                      delaySpeed={5000}
+                      cursor={false}
+                      loop={1}
+                    />
+                  </span>
                 </span>
             </h2>
             
