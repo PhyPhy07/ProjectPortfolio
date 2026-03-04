@@ -47,6 +47,7 @@ const HeroSection = () => {
         </ScrollReveal>
 
         {/* Role and description */}
+        <div id="about">
         <ScrollReveal delay={0.15} className="mt-10 sm:mt-16 max-w-3xl px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">About Me</h2>
           <span></span>
@@ -61,6 +62,7 @@ const HeroSection = () => {
             </p>
           </div>
         </ScrollReveal>
+        </div>
       </div>
     </section>
   );

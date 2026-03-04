@@ -36,7 +36,7 @@ const WorkExperience = () => {
     text.length <= maxLength ? text : text.slice(0, maxLength).trim() + "...";
 
   return (
-    <section id="about" className="relative py-24">
+    <section id="experience" className="relative py-24">
       {/* glow effect */}
       <div
         className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2  w-[90vw] sm:w-[760px] md:w-[1000px] h-[280px] sm:h-[380px] md:h-[520px] opacity-40 blur-3xl"
