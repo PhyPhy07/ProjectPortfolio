@@ -49,12 +49,13 @@ const HeroSection = () => {
         {/* Role and description */}
         <ScrollReveal delay={0.15} className="mt-10 sm:mt-16 max-w-3xl px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">About Me</h2>
+          <span></span>
           <div className="text-white/70 leading-7 space-y-4">
             <p>I'm a Software Engineer who brings something distinct to the table — the analytical rigor of a systems thinker, the communication depth of a trained rhetorician, and the product intuition of someone who built it from the ground up.</p>
+            <p>I spent 15 years at The Home Depot, growing from cashier to department supervisor. I wasn't just observing how a $150B retailer operates — I was in it, managing people, solving real-time problems, and understanding what customers and associates actually need from the tools built for them.</p>
+            <p>Along the way, I earned a Master's in Composition and Rhetoric — which taught me to ask who the audience is before writing a single thing. That instinct doesn't leave you. It shows up in how I read a codebase, frame a problem, and talk to stakeholders.</p>
+            <p>After completing my Master's, I was selected to join The Home Depot's in-house software engineering program — a rare chance to bring both worlds together. For the past two years, I've been doing just that, writing production code with the store floor always in view.</p>
             <p className="text-[#FFB31F]">My path is unconventional — every step of it intentional.</p>
-            <p>I spent 15 years at The Home Depot, growing from cashier to department supervisor. I wasn't just observing how a $150B retailer operates — I was in it, managing people, solving real-time problems, and understanding what customers and associates actually need from the tools built for them. That experience gave me something most engineers don't have: genuine product instinct forged in the real world.</p>
-            <p>When The Home Depot offered an in-house software engineering bootcamp, I stepped through that door. I transitioned from the store floor to writing production code — bringing every bit of that operational context with me.</p>
-            <p>Woven through all of it is my Master's in Composition and Rhetoric — a reminder that how you communicate an idea is just as important as the idea itself. It sharpened my ability to think structurally, write with intention, and bridge technical work with the people it serves.</p>
             <p className="text-xl sm:text-2xl md:text-3xl text-[#D3453E] font-normal tracking-tight">
               <Typewriter words={["Engineer by training. Builder by instinct."]} typeSpeed={120} deleteSpeed={0} delaySpeed={5000} cursor={false} loop={1} />
             </p>
