@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import ScrollReveal from './ScrollReveal'
 
 const ProjectsSection = () => {
@@ -15,12 +16,36 @@ const ProjectsSection = () => {
                     {/* heading */}
                     <div className='mb-12'>
                         <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
-                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Coming Soon</h3>
+                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Carpe Diem: Task Management App</h3>
                     </div>
 
                     {/* description */}
                     <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-white/6 backdrop-blur-sm border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(30,107,90,0.25)]'>
-                        <p className='text-sm p-4 text-white/75'>Coming Soon</p>
+                        <div className='text-sm font-semibold leading-relaxed p-3 text-white/80 space-y-2'>
+                            <p>Carpe Diem — Full-stack productivity app that combines a personalized dashboard with a simple todo system.</p>
+                            <div>
+                                <p className='font-bold text-white/90 mb-0.5'>Features:</p>
+                                <ul className='list-disc list-inside space-y-0.5 ml-1'>
+                                    <li><strong>Authentication</strong> — GitHub OAuth and email/password sign-in, password reset, and display name</li>
+                                    <li><strong>Task management</strong> — Create tasks with statuses, due dates, and priorities</li>
+                                    <li><strong>Personalization</strong> — Marvel themed, mobile friendly, custom UI, and accessible components</li>
+                                    <li><strong>Link</strong> — <a href="https://carpe-diem-omega.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-[#5a9a8a] hover:underline'>https://carpe-diem-omega.vercel.app/</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className='font-bold text-white/90 mb-0.5'>Tech stack:</p>
+                                <p className='ml-1 leading-relaxed'>Next.js 16 (App Router), React 19, TypeScript, Supabase (Auth + PostgreSQL), Tailwind CSS, shadcn/ui, Radix UI, Vercel</p>
+                            </div>
+                            <div>
+                                <p className='font-bold text-white/90 mb-0.5'>Highlights:</p>
+                                <ul className='list-disc list-inside space-y-0.5 ml-1'>
+                                    <li>Server actions for mutations</li>
+                                    <li>Row-level data isolation per user</li>
+                                    <li>Auth callback handling for OAuth and password reset</li>
+                                    <li>Modular component structure</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div className="pointer-events-none absolute -inset-px rounded-[14px] opacity-60"
                         style={{
                             background: 'linear-gradient(135deg, rgba(30, 107, 90, 0.35), rgba(8, 43, 39, 0.05))',
@@ -39,8 +64,8 @@ const ProjectsSection = () => {
                     style={{
                         background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
                     }}>
-                        <div className='overflow-hidden h-[360px]'>
-                            {/* <Image src="/images/.png" alt='portflio-1' width={582} height={640} className='w-full h-auto transition-transform duration-3500 ease-linear group-hover:-translate-y-[55%] group-active:-translate-y-[55%] group-focus:-translate-y-[55%]'/> */}
+                        <div className='relative overflow-hidden h-[480px]'>
+                            <Image src="/todoapp.png" alt='portflio-1' fill className='object-cover object-top' sizes="(max-width: 768px) 100vw, 50vw"/>
                         </div>
                     </div>
                 </div>
@@ -83,7 +108,7 @@ const ProjectsSection = () => {
                         background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
                     }}>
                         <div className='overflow-hidden md:h-[360px] h-[250px]'>
-                           
+                            {/* <Image src="/todoapp.png" alt='portflio-1' width={582} height={640} className='w-full h-auto transition-transform duration-3500 ease-linear group-hover:-translate-y-[55%] group-active:-translate-y-[55%] group-focus:-translate-y-[55%]'/> */}
                         </div>
                     </div>
                 </div>
