@@ -20,11 +20,11 @@ const ProjectsSection = () => {
                     </div>
 
                     {/* description */}
-                    <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-white/6 backdrop-blur-sm border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(30,107,90,0.25)]'>
-                        <div className='text-sm font-semibold leading-relaxed p-3 text-white/80 space-y-2'>
+                    <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
+                        <div className='text-sm font-semibold leading-relaxed p-3 text-white space-y-2'>
                             <p>Carpe Diem — Full-stack productivity app that combines a personalized dashboard with a simple todo system.</p>
                             <div>
-                                <p className='font-bold text-white/90 mb-0.5'>Features:</p>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Features:</p>
                                 <ul className='list-disc list-inside space-y-0.5 ml-1'>
                                     <li><strong>Authentication</strong> — GitHub OAuth and email/password sign-in, password reset, and display name</li>
                                     <li><strong>Task management</strong> — Create tasks with statuses, due dates, and priorities</li>
@@ -33,11 +33,11 @@ const ProjectsSection = () => {
                                 </ul>
                             </div>
                             <div>
-                                <p className='font-bold text-white/90 mb-0.5'>Tech stack:</p>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Tech stack:</p>
                                 <p className='ml-1 leading-relaxed'>Next.js 16 (App Router), React 19, TypeScript, Supabase (Auth + PostgreSQL), Tailwind CSS, shadcn/ui, Radix UI, Vercel</p>
                             </div>
                             <div>
-                                <p className='font-bold text-white/90 mb-0.5'>Highlights:</p>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Highlights:</p>
                                 <ul className='list-disc list-inside space-y-0.5 ml-1'>
                                     <li>Server actions for mutations</li>
                                     <li>Row-level data isolation per user</li>
@@ -84,12 +84,33 @@ const ProjectsSection = () => {
                     {/* heading */}
                     <div className='mb-12 text-right'>
                         <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
-                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Coming Soon</h3>
+                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>The Weather Wonder</h3>
                     </div>
 
                     {/* description */}
-                    <div className='relative md:-ml-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-white/6 backdrop-blur-sm border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(30,107,90,0.25)]'>
-                        <p className='text-sm p-4 text-white/75'>Coming Soon</p>
+                    <div className='relative md:-ml-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
+                        <div className='text-sm font-semibold leading-relaxed p-3 text-white space-y-2'>
+                            <p>Weather Wonder — Full-stack weather app that aggregates three APIs (Open-Meteo, Pirate Weather, Weather.gov), scores each forecast, and shows the most optimistic one—sunniest and warmest outlook.</p>
+                            <div>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Highlights:</p>
+                                <ul className='list-disc list-inside space-y-0.5 ml-1'>
+                                    <li><strong>Multi-provider blending</strong> — Fetches from three APIs in parallel, filters outliers, and selects the best forecast with a custom scoring algorithm</li>
+                                    <li><strong>Weather wellness</strong> — Weather score, sinus risk, arthritis risk, and pressure change</li>
+                                    <li><strong>Location search</strong> — Geocoding via Nominatim (city, state, or ZIP)</li>
+                                    <li><strong>Mobile-first</strong> — Responsive layout, touch targets, safe-area support</li>
+                                    <li><strong>Server-side caching</strong> — 5-minute cache to reduce API calls</li>
+                                    <li><strong>Live app</strong> — <a href="https://the-bright-blend.vercel.app" target="_blank" rel="noopener noreferrer" className='text-[#5a9a8a] hover:underline'>the-bright-blend.vercel.app</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Tech stack:</p>
+                                <p className='ml-1 leading-relaxed'>Next.js 15 (App Router), React 19, Tailwind CSS, TypeScript, Vercel</p>
+                            </div>
+                            <div>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Architecture:</p>
+                                <p className='ml-1 leading-relaxed'>Provider registry with a shared interface, normalized data model, optimizer for outlier filtering and scoring, and Mermaid docs for data flow.</p>
+                            </div>
+                        </div>
                         <div className="pointer-events-none absolute -inset-px rounded-[14px] opacity-60"
                         style={{
                             background: 'linear-gradient(135deg, rgba(30, 107, 90, 0.35), rgba(8, 43, 39, 0.05))',
@@ -97,7 +118,8 @@ const ProjectsSection = () => {
                         />
                     </div>
                     <div className='mt-6 ml-2 flex justify-end space-x-3 text-white/60'>
-                        
+                        <span>*</span>
+                        <span>*</span>
                     </div>
                 </div>
 
@@ -107,8 +129,8 @@ const ProjectsSection = () => {
                     style={{
                         background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
                     }}>
-                        <div className='overflow-hidden md:h-[360px] h-[250px]'>
-                            {/* <Image src="/todoapp.png" alt='portflio-1' width={582} height={640} className='w-full h-auto transition-transform duration-3500 ease-linear group-hover:-translate-y-[55%] group-active:-translate-y-[55%] group-focus:-translate-y-[55%]'/> */}
+                        <div className='relative overflow-hidden md:h-[360px] h-[250px]'>
+                            <Image src="/weather-wonder.png" alt='The Weather Wonder app' fill className='object-cover object-top' sizes="(max-width: 768px) 100vw, 50vw"/>
                         </div>
                     </div>
                 </div>
