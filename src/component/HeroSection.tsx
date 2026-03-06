@@ -41,7 +41,7 @@ const HeroSection = () => {
           {/* Headline */}
           <div className="md:pl-2 text-center md:text-left">
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-normal tracking-tight leading-[1.2]">
-              <span className="block"> I blend precision with prose,</span>
+              <span className="block whitespace-nowrap">I blend precision with prose,</span>
               <span className="block">curiosity with practicality,</span>
               <span className="block">and structure with <span className="text-[#FFB31F]">soul</span>.</span>
             </h1>
