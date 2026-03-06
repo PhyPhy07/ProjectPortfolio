@@ -12,19 +12,10 @@ const HeroSection = () => {
         {/* Avatar and headline */}
         <ScrollReveal stagger={0.12} className="flex flex-col md:flex-row gap-8 items-start md:items-center">
           {/* Avatar and greeting */}
-          <div className="relative flex justify-center md:justify-end">
+          <div className="relative flex justify-center md:justify-start">
             <div className="pointer-events-none absolute -inset-12 md:-inset-24 rounded-full bg-linear-to-b from-[#36A07F] via-[#C0350F]/60 to-transparent blur-3xl opacity-90" />
             <div className="relative">
-              <Image
-                src="/images/avatar.png"
-                alt="avatar image"
-                width={300}
-                height={300}
-                className="relative object-cover rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-[300px] md:h-[300px]"
-                priority
-                unoptimized
-              />
-              <div className="select-none pointer-events-none absolute -top-8 -right-6 md:-top-16 md:-right-40 text-md text-white/70 -mt-24 md:-mt-1">
+              <div className="select-none pointer-events-none absolute -top-8 -right-6 md:-top-16 md:-right-40 text-md text-white/70 -mt-24 md:-mt-1 z-10">
                 <span className="sm:whitespace-nowrap">
                   Hello World! I'm{" "}
                   <span className="text-[#FFB31F]">Phy Sneed ("Phylicia" if we want to get fancy)</span>
@@ -32,6 +23,17 @@ const HeroSection = () => {
                 <div className="relative w-12 h-6 md:w-36 md:h-20 ml-8 md:ml-58 mt-1">
                   <Image src="/images/heroarrow.gif" alt="arrow image" fill className="object-contain scale-x-100 -rotate-6" priority />
                 </div>
+              </div>
+              <div className="rounded-3xl overflow-hidden w-48 h-48 sm:w-64 sm:h-64 md:w-[300px] md:h-[300px] bg-[#C78AIE] p-4">
+                <Image
+                  src="/avatarr.png"
+                  alt="avatar image"
+                  width={300}
+                  height={300}
+                  className="relative object-contain w-full h-full"
+                  priority
+                  unoptimized
+                />
               </div>
             </div>
           </div>
