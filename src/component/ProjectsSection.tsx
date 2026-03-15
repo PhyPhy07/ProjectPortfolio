@@ -13,14 +13,69 @@ const ProjectsSection = () => {
             />
             <ScrollReveal stagger={0.12} className='grid grid-cols-1 md:grid-cols-2 items-center'>
                 <div className='relative -pl-50 z-10'>
-                    {/* heading */}
                     <div className='mb-12'>
+                        <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
+                        <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Pink Print: DIY Project Planner</h3>
+                    </div>
+
+                    <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
+                        <div className='text-sm font-semibold leading-relaxed p-3 text-white space-y-2'>
+                            <p> A DIY project planner powered by Gemini AI that converts natural language descriptions into structured, actionable project plans for painting, flooring, and fencing — built with real-world expertise from years on the floor as a Home Depot sales rep.
+
+</p>
+                            <div>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Highlights:</p>
+                                <ul className='list-disc list-inside space-y-0.5 ml-1'>
+                                    <li><strong>AI-powered cost estimation</strong> — Natural language input → structured project details via Gemini</li>
+                                    <li><strong>Smart clarifying questions</strong> — From prior HD sales rep experience—asks for missing info (interior/exterior, dimensions, surface type) before estimating to ensure you cover all edge cases</li>
+                                    <li><strong>Project types</strong> — Painting (rooms, doors, ceilings, trim), flooring (hardwood, carpet, tile, LVP), fencing</li>
+                                    <li><strong>Materials breakdown</strong> — Paint gallons, underlayment, posts, etc., with cost ranges</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p className='font-bold text-[#FFB31F] mb-0.5'>Tech stack:</p>
+                                <p className='ml-1 leading-relaxed'>Next.js 16, Vercel AI SDK, Supabase, Zod, Tailwind CSS</p>
+                            </div>
+                        </div>
+                        <div className="pointer-events-none absolute -inset-px rounded-[14px] opacity-60"
+                        style={{
+                            background: 'linear-gradient(135deg, rgba(30, 107, 90, 0.35), rgba(8, 43, 39, 0.05))',
+                        }}
+                        />
+                    </div>
+                    <div className='mt-6 ml-2 flex justify-start space-x-3 text-white/60'>
+                        <span>*</span>
+                        <span>*</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div tabIndex={0} className='group cursor-pointer rounded-2xl overflow-hidden border border-[#ffecd1] shadow-[0_0_90px_rgba(30,107,90,0.28)] transition-transform duration-300 hover:-translate-y-1 focus:-translate-y-1 hover:border-[#D3453E]/60'
+                    style={{
+                        background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
+                    }}>
+                        <div className='relative overflow-hidden h-[282px]'>
+                            <Image src="/portfoliopic.png" alt='AI Project Cost Estimator' fill className='object-contain object-top' sizes="(max-width: 768px) 100vw, 50vw"/>
+                        </div>
+                    </div>
+                </div>
+            </ScrollReveal>
+        </div>
+
+        <div>
+            <div className='pointer-events-none absolute right-0 left-1/3 top-8 -z-10 h-[420px] opacity-40 blur-3xl'
+            style={{
+                background: 'radial-gradient(60% 60% at 60% 40%, rgba(30, 107, 90, 0.6) 0%, rgba(8, 43, 39, 0) 70%)',
+            }}
+            />
+            <ScrollReveal stagger={0.12} delay={0.8} className='grid grid-cols-1 md:grid-cols-2 items-center'>
+                <div className='relative md:order-2 z-10'>
+                    <div className='mb-12 text-right'>
                         <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
                         <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>Carpe Diem: Task Management App</h3>
                     </div>
 
-                    {/* description */}
-                    <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
+                    <div className='relative md:-ml-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
                         <div className='text-sm font-semibold leading-relaxed p-3 text-white space-y-2'>
                             <p>Carpe Diem — Full-stack productivity app that combines a personalized dashboard with a simple todo system.</p>
                             <div>
@@ -52,20 +107,19 @@ const ProjectsSection = () => {
                         }}
                         />
                     </div>
-                    <div className='mt-6 ml-2 flex justify-start space-x-3 text-white/60'>
+                    <div className='mt-6 ml-2 flex justify-end space-x-3 text-white/60'>
                         <span>*</span>
                         <span>*</span>
                     </div>
                 </div>
 
-                {/* project image */}
-                <div>
+                <div className='relative md:order-1'>
                     <div tabIndex={0} className='group cursor-pointer rounded-2xl overflow-hidden border border-[#ffecd1] shadow-[0_0_90px_rgba(30,107,90,0.28)] transition-transform duration-300 hover:-translate-y-1 focus:-translate-y-1 hover:border-[#D3453E]/60'
                     style={{
                         background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
                     }}>
                         <div className='relative overflow-hidden h-[480px]'>
-                            <Image src="/todoapp.png" alt='portflio-1' fill className='object-cover object-top' sizes="(max-width: 768px) 100vw, 50vw"/>
+                            <Image src="/todoapp.png" alt='Carpe Diem task app' fill className='object-cover object-top' sizes="(max-width: 768px) 100vw, 50vw"/>
                         </div>
                     </div>
                 </div>
@@ -78,17 +132,14 @@ const ProjectsSection = () => {
                 background: 'radial-gradient(60% 60% at 60% 40%, rgba(30, 107, 90, 0.6) 0%, rgba(8, 43, 39, 0) 70%)',
             }}
             />
-            <ScrollReveal stagger={0.14} delay={0.8} className='grid grid-cols-1 md:grid-cols-2 items-center'>
-                {/* text content */}
-                <div className='relative md:order-2 z-10'>
-                    {/* heading */}
-                    <div className='mb-12 text-right'>
+            <ScrollReveal stagger={0.14} delay={1.6} className='grid grid-cols-1 md:grid-cols-2 items-center'>
+                <div className='relative -pl-50 z-10'>
+                    <div className='mb-12'>
                         <p className='text-xs text-[#5a9a8a]'>Featured Project</p>
                         <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F]'>The Weather Wonder</h3>
                     </div>
 
-                    {/* description */}
-                    <div className='relative md:-ml-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
+                    <div className='relative md:-mr-24 md:-mt-6 z-20 max-w-5xl rounded-2xl p-5 bg-[#082B27]/95 backdrop-blur-md border border-[#ffecd1]/30 shadow-[0_6px_50px_rgba(0,0,0,0.4)]'>
                         <div className='text-sm font-semibold leading-relaxed p-3 text-white space-y-2'>
                             <p>Weather Wonder — Full-stack weather app that aggregates three APIs (Open-Meteo, Pirate Weather, Weather.gov), scores each forecast, and shows the most optimistic one—sunniest and warmest outlook.</p>
                             <div>
@@ -117,14 +168,13 @@ const ProjectsSection = () => {
                         }}
                         />
                     </div>
-                    <div className='mt-6 ml-2 flex justify-end space-x-3 text-white/60'>
+                    <div className='mt-6 ml-2 flex justify-start space-x-3 text-white/60'>
                         <span>*</span>
                         <span>*</span>
                     </div>
                 </div>
 
-                {/* project image */}
-                <div className='relative md:order-1'>
+                <div>
                     <div tabIndex={0} className='group cursor-pointer rounded-2xl overflow-hidden border border-[#ffecd1] shadow-[0_0_90px_rgba(30,107,90,0.28)] transition-transform duration-300 hover:-translate-y-1 focus:-translate-y-1 hover:border-[#D3453E]/60'
                     style={{
                         background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
