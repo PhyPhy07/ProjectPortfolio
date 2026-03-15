@@ -18,6 +18,9 @@ const ContactSection = () => {
 
                 <h3 className='text-2xl md:text-3xl font-semibold text-[#FFB31F] mb-4'>I'd Love to Connect!</h3>
                 <p className='text-sm text-white/60 mb-6'>Passionate about accessible software, rapid learning, and shipping great products. I’m exploring software engineering roles where curiosity is welcomed, feedback is king, and cross-functional collaboration fuels the outcome.</p>
+                <Link href="/ProfileResume.pdf" target="_blank" rel="noopener noreferrer" className='inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#FFB31F]/20 text-[#FFB31F] hover:bg-[#FFB31F]/30 transition-colors mb-4'>
+                    View / Download Resume
+                </Link>
                 <div className='flex items-center justify-center gap-4 text-white/80'>
                     <Link href="https://www.linkedin.com/in/phylicia-sneed/" target="_blank" rel="noopener noreferrer" className='hover:text-[#D3453E]'>
                         <GrLinkedin className='size-8'/>
