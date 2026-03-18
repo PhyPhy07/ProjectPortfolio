@@ -30,6 +30,7 @@ const ProjectsSection = () => {
                                     <li><strong>Smart clarifying questions</strong> — From prior HD sales rep experience—asks for missing info (interior/exterior, dimensions, surface type) before estimating to ensure you cover all edge cases</li>
                                     <li><strong>Project types</strong> — Painting (rooms, doors, ceilings, trim), flooring (hardwood, carpet, tile, LVP), fencing</li>
                                     <li><strong>Materials breakdown</strong> — Paint gallons, underlayment, posts, etc., with cost ranges</li>
+                                    <li><strong>Link</strong> — <a href="https://buildingforabuilder.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-[#5a9a8a] hover:underline'>https://pinkprint.vercel.app/</a></li>
                                 </ul>
                             </div>
                             <div>
@@ -54,8 +55,8 @@ const ProjectsSection = () => {
                     style={{
                         background: 'linear-gradient(180deg, #1e6b5a 0%, #134237 40%, #082B27 100%)',
                     }}>
-                        <div className='relative overflow-hidden h-[282px]'>
-                            <Image src="/portfoliopic.png" alt='AI Project Cost Estimator' fill className='object-contain object-top' sizes="(max-width: 768px) 100vw, 50vw"/>
+                        <div className='relative overflow-hidden h-[341px] max-w-[99.5%] mx-auto'>
+                            <Image src="/images/pinkprintdemo.png" alt='Pink Print: DIY Project Planner' fill className='object-contain object-top' sizes="(max-width: 792px) 100vw, 50vw"/>
                         </div>
                     </div>
                 </div>
